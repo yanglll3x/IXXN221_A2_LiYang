@@ -1,0 +1,383 @@
+/* Base Style */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.1rem;
+}
+
+body {
+    min-width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    /* line-height: */
+    /* color: #124673; */
+    margin:0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #124673;
+}
+
+h3{
+    font-size: 1.5rem;
+    color: #124673;
+}
+
+.main-container ul {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.main-container ul li{
+    height: fit-content;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.8em;
+    color: #124673;
+}
+
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main {
+    margin: 10px;
+}
+/* Main Style */
+
+.container-top {
+    display: flex;
+}
+
+.header-spacer {
+    flex: 1 0;
+    /* background-color: #185C9D; */
+    background-color: #185C9D;
+    height: 41.67vw;
+    max-height: 600px;
+}
+
+.header-spacer-1 {
+    flex: 1 0;
+    background-color: #185C9D;
+    height: 17vw;
+    max-height: 220px;
+}
+
+.logo img {
+    width: 8.5vw;
+    min-width: 80px;
+    max-width: 120px;
+    height: 8.5vw;
+    min-height: 80px;
+    max-height: 120px;
+}
+
+.logo figure {
+    margin: 0;
+    text-align: center;
+}
+
+.logo figcaption {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font: 500 21px 'Montserrat', sans-serif;
+} 
+
+.navigation-container {
+    display: flex;
+    position: relative;
+}
+
+.navigation-container nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#booking-button a {
+    font: 700 1.3rem 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.container-footer {
+    /* background: #185C9D; */
+    display: flex;
+}
+
+.footer-spacer {
+    flex: 1 0;
+    background-color: #185C9D;
+    height: 20vw;
+    max-height: 300px;
+}
+
+
+.footer-area {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #185C9D;
+    position: relative;
+}
+
+.container-bottom a{
+    color: white;
+    text-decoration: none;
+    font: 300 16px 'Montserrat', sans-serif;
+}
+
+.container-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    padding-top: 40px;
+}
+
+h5 {
+    flex: 1;
+    color: white;
+    font: 500 20px 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.follow-row1,
+.follow-row2 {
+    flex: 1;
+    display: flex;
+}
+
+.follow-facebook,
+.follow-twitter,
+.follow-email,
+.follow-phone {
+    flex: 1;
+}
+
+.follow-facebook span img,
+.follow-twitter span img,
+.follow-email span img,
+.follow-phone span img{
+    vertical-align: middle;
+}
+
+.follow-facebook span a,
+.follow-twitter span a,
+.follow-email span a,
+.follow-phone span a{
+    vertical-align: middle;
+}
+
+.footer-copyright, 
+.footer-copyright a {
+    font: 300 16px 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.straight-line {
+    width: 100%;
+    height: 1px;
+    border-top: solid white 1px;    
+
+}
+
+.footer-skip {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-skip {
+    padding:15px 0;
+}
+
+
+/* Home Page Body part */
+
+.homepart1-container,
+.homepart2-container,
+.homepart3-container {
+    display: flex;
+}
+
+.part1-1-area,
+.part1-2-area,
+.part1-3-area {
+    flex: 1;
+    position: relative;
+}
+
+.homepart1-container img,
+.homepart1-container a,
+.homepart1-container p,
+.homepart1-container h3{
+    color: #124673;
+    text-align: center;
+}
+
+.info-img {
+    width: 160px;
+    height: 160px;
+    text-align: center;
+}
+
+
+
+/* .homepart1-container a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+.main-spacer {
+    flex: 1 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1440px; /* 10%vw = 144px*/
+}
+
+.main-container {
+    display: flex;
+}
+
+.homepart1-container {
+    padding: 40px 120px;
+    align-items: stretch;
+}
+
+.service-container{
+    padding: 40px 120px;
+}
+
+.part1-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homepart2-container {
+    flex-direction: column;
+    padding: 40px 120px;
+}
+
+.part2-area {
+    display: flex;
+    padding: 10px 0;
+}
+
+.part2-1-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.part2-1-text a{
+    font: 1.2rem;
+    align-self: flex-end;
+}
+
+.part2-2-text{
+    display: flex; 
+    flex-direction: column;
+}
+
+.part2-2-text a{
+    font: 1.2rem;
+    align-self: flex-end;
+}
+
+.homepart3-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 120px;
+}
+
+.part3-container {
+    display: flex;
+}
+
+
+
+.part3-area {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.vaccination-img,
+.surgery-img {
+    display: flex;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-medium-box {
+    display: flex;
+}
+
+.service-spacer {
+    flex: 1 0;
+}
+
+.service-box {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.services-img {
+    width: 160px;
+    height: 160px
+}
+
+.service-medium-box {
+    display: flex;
+    align-items: stretch;
+}
+
+.service-box a{
+    align-self: flex-end;
+}
+
+.service-text {
+    flex: 1;
+
+}
+
+#service-box {
+    display: flex;
+}
+

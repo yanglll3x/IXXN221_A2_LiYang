@@ -1,0 +1,315 @@
+/* media queries */
+.navigation-container,
+.menus-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-container {
+    flex-direction: column;
+}
+
+.header-container {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px; /* 10%vw = 144px*/
+    background: url(../img/HomePage_Image1.jpg) center / cover;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top 100px right 0;
+    background-color: #185C9D;
+    position: relative;
+}
+
+.header-container-1 {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px; 
+    background-size: 100% auto;
+    background-color: #185C9D;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding:25px 40px 0 25px;
+    width: 240px;
+}
+
+.menus-container {
+    flex: auto;
+    padding-top: clamp(10px, 1vw, 15px);
+    padding-left: clamp(34px, 2.2vw, 38px);
+}
+
+.menus-container-1 {
+    flex: auto;
+    padding-top: clamp(10px, 1vw, 15px);
+    padding-left: clamp(34px, 2.2vw, 38px);
+}
+
+.menu-button {
+    padding: 0.3rem 0.5rem;
+    font: 400 1.2rem 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+
+#homepage-text {
+    display: flex;
+    color: white;
+    font: 700 28px 'Montserrat', sans-serif;
+    line-height: 40px;
+    text-align: left;
+}
+
+#homepage-text span {
+    padding-right: 0;
+    padding-top: 15px;
+    padding-left: 34px;
+    padding-bottom: 15px;
+}
+
+#booking-container {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+
+#booking-button {
+    text-align: center;
+    width: fit-content;
+    padding: 16px 32px;
+    background-color: #B5DFF5;
+    border-radius: 25px;
+}
+
+.footer-area {
+    width: 100%;
+    max-width: 1440px; /* 10%vw = 144px*/    
+}
+
+.follow-row1,
+.follow-row2 {
+    flex-direction: column;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.follow-facebook,
+.follow-twitter,
+.follow-email,
+.follow-phone {
+    margin: 3px;
+}
+
+.container-bottom {
+    margin-left: 3%;
+}
+
+/* home page */
+
+.homepart1-container{
+    flex-direction: column;
+}
+
+.part2-area {
+    flex-direction: column;
+}
+
+.part3-container {
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
+
+.part3-area {
+    padding:10px 0;
+}
+
+.vaccination-img,
+.surgery-img {
+    justify-content: center;
+}
+
+.service-medium-box {
+    flex-direction: column;
+}
+
+.service-box {
+    padding: 20px 15px;
+}
+    
+
+
+
+@media (min-width: 1080px) {
+    .menus-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menus-container-1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation-container {
+        flex-direction: row;
+        justify-content: space-around;
+        background: none;
+    }
+
+    .logo {
+        float: left;
+        padding:35px 0px 0 0px;
+    }
+    
+    .menus-container {
+        flex: auto;
+        padding-top: clamp(90px, 9vw, 130px);
+        padding-left: 0;
+    }
+
+    .menus-container-1 {
+        flex: auto;
+        padding-top: clamp(142px, 10vw, 150px);
+        padding-left: 0;
+    }
+
+    .menu-button {
+        padding: 0 0.5rem;
+        font: 400 1.2rem 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+    
+    .header-container {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px; /* 10%vw = 144px*/
+        height: 41.67vw; /* 600px = 41.6667vw */
+        max-height: 600px;
+        background: url(../img/HomePage_Image1.jpg) center / cover;
+        position: relative;
+    }
+
+    #homepage-text {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font: 700 28px 'Montserrat', sans-serif;
+    line-height: 46px;
+    text-align: right;
+    }
+
+    #homepage-text span {
+        padding-right: 48%;
+        padding-top: 6%; 
+        padding-left: 0;
+    }
+
+    #booking-container {
+        display: flex;
+        flex: 1;
+        align-items: flex-end;
+        position: relative;
+    }
+    
+    #booking-button {
+        text-align: center;
+        width: fit-content;
+        padding: 16px 32px;
+        background-color: #B5DFF5;
+        border-radius: 25px;
+        position: absolute;
+        bottom: 15px;
+        left: 9%;
+    }
+
+    .footer-area {
+        width: 100%;
+        max-width: 1440px; /* 10%vw = 144px*/
+    }
+
+    .follow-row1,
+    .follow-row2 {
+        flex-direction: row;
+        height: 25px;
+    }
+
+    .footer-copyright {
+        margin-left: 9%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .follow-facebook,
+    .follow-twitter,
+    .follow-email,
+    .follow-phone {
+        margin: 3px;
+    }
+
+    .container-bottom {
+        margin-left: 9%;
+    }
+
+    .header-container-1 {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        max-width: 1440px; /* 10%vw = 144px*/
+        max-height: 220px;
+        background-size: 100% auto;
+        background-color: #185C9D;
+        position: relative;
+    }
+
+
+    /* home page */
+
+    .homepart1-container{
+        flex-direction: row;
+    }
+    
+    .part2-area {
+        flex-direction: row;
+    }
+  
+    .part3-container {
+        flex-direction: row;
+    }
+
+    .vaccination-img,
+    .surgery-img {
+        display: block;
+    }
+
+    .service-medium-box {
+        flex-direction: row;
+    }
+
+    .service-box {
+        padding: 15px 15px;
+    }
+
+
+}
